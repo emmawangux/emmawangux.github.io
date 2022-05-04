@@ -20,16 +20,11 @@ body {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 50% 50%;
     padding: 40px 20px 40px 20px;
     background-color: #9eb56e;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 25px;
     padding: 20px;
 }
 
@@ -38,10 +33,6 @@ footer {
     grid-template-columns: 50% 50%;
     padding: 0 50px;
     background-color: #9eb56e;
-}
-
-nav {
-    text-align: right;
 }
 
 nav a {
@@ -54,7 +45,6 @@ a {
 }
 
 h1 {
-    font-family: 'Fredoka One';
     font-weight: normal;
     font-size: 42pt;
     color: #1d7072;
@@ -66,7 +56,6 @@ h1 {
 
 .antiques {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: auto auto auto auto;
 }
 
@@ -74,47 +63,32 @@ h1 {
     background-size: cover;
     background-position: center top;
     min-height: 300px;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 #splashSection {
     background-image: url(images/antique1.jpg);
     background-position: center center;
     height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #splash2 {
     background-image: url(images/antique5.jpg);
-    grid-column-start: 2;
-    grid-column-end: 4;
 }
 
 #splash3 {
     background-image: url(images/antique3.jpg);
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 #splash4 {
     background-image: url(images/antique4.jpg);
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 
 #splash5 {
     background-image: url(images/antique6.jpg);
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 
 #splash6 {
     background-image: url(images/antique2.jpg);
-    grid-column-start: 3;
-    grid-column-end: 4;
 }
 
 #antique-text-1,
@@ -125,3 +99,60 @@ h1 {
 
 
 /* === Add New CSS Below === */
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+    font-family: 'Fredoka One';}
+
+main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 25px;
+}
+
+nav {
+    text-align: right;
+}
+
+.antiques {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.splash {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#splash2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#splash3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#splash4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#splash5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#splash6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#splashSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

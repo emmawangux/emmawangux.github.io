@@ -1,0 +1,203 @@
+/* 
+nav bar background color: 000000 
+body background color: cccccc
+<h1>Om Nom Nom</h1> font: Teko/ SemiBold/ 72pt
+<h2> font: Helvetica/ Bold/ 24pt
+<p> font: Helvetica/ Regular/ 14pt
+<footer> font: Helvetica/ Oblique /10pt
+
+*/
+
+/* === Typography ===  */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-style: regular;
+    font-size: 14pt;
+    line-height: 18pt;
+}
+
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Teko;
+    font-size: 72pt;
+}
+
+footer {
+    font-style: Oblique;
+    font-size: 10pt;
+    color: #ffffff;
+}
+
+#bold{
+    font-size: 18pt;
+    font-style: bold;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+/* === Backgrounds ===  */
+
+header {
+    background-color: #000000;
+}
+
+main {
+    background-color: #cccccc;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    background-attachment: fixed;
+}
+
+#splash {
+    background-image: url("images/heading.png");
+    background-size: cover;
+}
+
+nav a {
+    color: #cccccc;
+}
+
+footer {
+    background-color: #000000;
+}
+
+#footerbox{
+    background-color: #000000;
+}
+
+.subscribe {
+    background-color: #ff0000;
+    color: black;
+}
+
+/* === Box Model === */
+header{
+    height: 120px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#splash {
+    height: 480px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+nav a {
+    display: inline-block;
+    align-items: center; 
+    justify-content: center;
+    margin-right: 15px;
+    padding-top: 55px;
+    vertical-align: top;
+    padding-bottom: 45px;
+}
+
+nav img {
+    height: 90px;
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    justify-items: center;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+body{
+    padding-top: 88px;
+}
+
+#footerbox{
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+footer {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+article {
+    margin-bottom: 80;
+    margin-left: 35px;
+}
+
+
+
+/* === Layout === */
+.floatleft {
+    float: left;
+    padding-right: 40px;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.foodMenu {
+    display: grid;
+    grid-template-areas: 'image description';
+     padding: 10px
+}
+
+.images {
+    grid-area: image;
+padding-top: 35px;
+  display: block;
+    
+}
+
+.description {
+    grid-area: description;
+     padding: 10px
+}
+
+
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 444px;
+}
+
+header {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+}
+
+.subscribe {
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
